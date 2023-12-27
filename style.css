@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container { 
+    height: 550px;
+    width: 400px;
+    border: solid black 1px;
+    border-radius: 15px;
+    padding: 15px;
+
+}
+
+#calculator {
+    height: 100%;
+    border: solid red 1px;
+}
+
+#display-container {
+    height: 15%;
+    width: 100%;
+    border: solid red 1px;
+}
+
+#display {
+    height: 95%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+}
+
+#equation {
+    margin-right: 1%;
+}
+
+#buttons {
+    height: 85%;
+    width: 100%;
+    border: solid blue 1px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#buttons > div > div{
+    border: solid black 1px;
+    user-select: none;
+}
+
+.function-button {
+    height: 90%;
+    width: 90%;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zero-digit-button {
+    height: 90%;
+    width: 95%;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#zero-button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.digit-button {
+    height: 90%;
+    width: 90%;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
