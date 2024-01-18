@@ -14,16 +14,16 @@
                 </div>
                 <div id="buttons">
                     <div id="clear-button">
-                        <div class="function-button" onclick="clearScreen()">C</div>
+                        <div class="function-button1" onclick="clearScreen()">C</div>
                     </div>
                     <div id="toggle-button" onclick="changeSign()">
-                        <div class="function-button">+/-</div>
+                        <div class="function-button1">+/-</div>
                     </div>
-                    <div id="percent-button">
-                        <div class="function-button">%</div>
+                    <div id="percent-button" onclick="toPercent()">
+                        <div class="function-button1">%</div>
                     </div>
                     <div id="divide-button" onclick="setOperator('/')">
-                        <div class="function-button">÷</div>
+                        <div class="function-button2">÷</div>
                     </div>
                     <div id="seven-button">
                         <div class="digit-button" onclick="inputNumber(7)">7</div>
@@ -35,7 +35,7 @@
                         <div class="digit-button" onclick="inputNumber(9)">9</div>
                     </div>
                     <div id="multiply-button" onclick="setOperator('*')">
-                        <div class="function-button">×</div>
+                        <div class="function-button2">×</div>
                     </div>
                     <div id="four-button">
                         <div class="digit-button" onclick="inputNumber(4)">4</div>
@@ -47,7 +47,7 @@
                         <div class="digit-button" onclick="inputNumber(6)">6</div>
                     </div>
                     <div id="subtract-button" onclick="setOperator('-')">
-                        <div class="function-button">-</div>
+                        <div class="function-button2">-</div>
                     </div>
                     <div id="one-button" onclick="inputNumber(1)">
                         <div class="digit-button">1</div>
@@ -59,19 +59,22 @@
                         <div class="digit-button">3</div>
                     </div>
                     <div id="add-button" onclick="setOperator('+')">
-                        <div class="function-button">+</div>
+                        <div class="function-button2">+</div>
                     </div>
                     <div id="zero-button">
                         <div class="zero-digit-button" onclick="inputNumber(0)">0</div>
                     </div>
-                    <div id="decimal-button">
-                        <div class="function-button">.</div>
+                    <div id="decimal-button" onclick="inputDecimal()">
+                        <div class="digit-button">.</div>
                     </div>
                     <div id="equal-button" onclick="equals()">
-                        <div class="function-button">=</div>
+                        <div class="function-button2">=</div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="github-footer">
+            <img src="img/github.png" draggable="false">made by&nbsp<a class="github-link" href="https://github.com/r-benin">r-benin</a>
         </div>
     </body>
 

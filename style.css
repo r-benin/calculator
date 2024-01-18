@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #f9fafb;
 }
 
 #container { 
@@ -13,18 +14,18 @@ body {
     border: solid black 1px;
     border-radius: 15px;
     padding: 15px;
-
+    background-color: #2b2c2e;
+    box-shadow: 0px 0px 10px black;
 }
 
 #calculator {
     height: 100%;
-    border: solid red 1px;
 }
 
 #display-container {
     height: 15%;
     width: 100%;
-    border: solid red 1px;
+    margin-bottom: 10px;
 }
 
 #display {
@@ -35,8 +36,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 5px;
     font-family: 'Roboto Mono', monospace;
     font-size: 50px;
+    border-radius: 10px;
 }
 
 #equation {
@@ -46,24 +49,44 @@ body {
 #buttons {
     height: 85%;
     width: 100%;
-    border: solid blue 1px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
 }
 
 #buttons > div > div{
+    height: 90%;
+    width: 90%;
+    font-size: large;
+    font-family: 'Helvetica', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: solid black 1px;
     user-select: none;
 }
 
-.function-button {
-    height: 90%;
-    width: 90%;
+.function-button1 {
     border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #484b50;
+    color: white;
+}
+
+.function-button2 {
+    border-radius: 100%;
+    background-color: #399d93;
+    color: white;
+    
+    &.unselected {
+        border-radius: 100%;
+        background-color: #399d93;
+        color: white;
+    }
+
+    &.selected {
+        background-color: white;
+        color: #399d93;
+    }
 }
 
 .zero-digit-button {
@@ -73,6 +96,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #6e7679;
+    color: white;
 }
 
 #zero-button {
@@ -87,6 +112,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #6e7679;
+    color: white;
 }
 
+.github-footer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    margin: 0px 0px 10px 10px;
+}
+
+.github-footer img{
+    width: 1.5em;
+    margin-right: 5px;
+}
+
+.github-link {
+    color: black;
+}
 
